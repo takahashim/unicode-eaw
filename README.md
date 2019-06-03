@@ -1,8 +1,11 @@
 # Unicode::Eaw
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/unicode/eaw`. To experiment with that code, run `bin/console` for an interactive prompt.
+[Unicode East Asian Width data](https://www.unicode.org/reports/tr11/) for Ruby
 
-TODO: Delete this and the text above, and describe your gem
+This library is a port of [easta](https://github.com/teppeis/easta) for Node.js.
+
+Support Unicode version: [12.1.0](https://www.unicode.org/Public/12.1.0/ucd/EastAsianWidth.txt)
+
 
 ## Installation
 
@@ -22,7 +25,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Unicode::Eaw.width('A') #=> :Na  ## Narrow
+Unicode::Eaw.width('Ａ') #=> :F  ## Fullwidth
+Unicode::Eaw.width('ア') #=> :W  ## Wide
+Unicode::Eaw.width('ｱ') #=> :H   ## Halfwidth
+Unicode::Eaw.width('α') #=> :A  ## Ambiguous
+Unicode::Eaw.width('À') #=> :N  ## Neutral
+```
 
 ## Development
 
