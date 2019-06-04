@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Unicode::Eaw::VERSION
   spec.authors       = ["takahashim"]
   spec.email         = ["maki@rubycolor.org"]
+  spec.license       = "MIT"
 
   spec.summary       = %q{Unicode East Asian Width data for Ruby.}
   spec.description   = %q{Unicode East Asian Width data for Ruby.}
