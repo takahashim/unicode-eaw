@@ -5,7 +5,7 @@ module Unicode
   module Eaw
     class Error < StandardError; end
 
-    def width(ch)
+    def property(ch)
       cp = ch[0].ord
       left = 0
       right = DATA.length - 1
@@ -35,6 +35,6 @@ module Unicode
       return :N
     end
 
-    module_function :width
+    module_function :property
   end
 end

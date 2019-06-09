@@ -26,13 +26,19 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-Unicode::Eaw.width('A') #=> :Na  ## Narrow
-Unicode::Eaw.width('Ａ') #=> :F  ## Fullwidth
-Unicode::Eaw.width('ア') #=> :W  ## Wide
-Unicode::Eaw.width('ｱ') #=> :H   ## Halfwidth
-Unicode::Eaw.width('α') #=> :A  ## Ambiguous
-Unicode::Eaw.width('À') #=> :N  ## Neutral
+Unicode::Eaw.property('A') #=> :Na  ## Narrow
+Unicode::Eaw.property('Ａ') #=> :F  ## Fullwidth
+Unicode::Eaw.property('ア') #=> :W  ## Wide
+Unicode::Eaw.property('ｱ') #=> :H   ## Halfwidth
+Unicode::Eaw.property('α') #=> :A  ## Ambiguous
+Unicode::Eaw.property('À') #=> :N  ## Neutral
 ```
+
+## Changelog
+
+### 2.0.0
+
+Breaking change: rename `Eaw.width` to `Eaw.property`
 
 ## Development
 
