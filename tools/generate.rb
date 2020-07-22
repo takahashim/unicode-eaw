@@ -1,6 +1,6 @@
 require 'open-uri'
 
-URL = 'https://www.unicode.org/Public/12.1.0/ucd/EastAsianWidth.txt'
+URL = 'https://www.unicode.org/Public/14.0.0/ucd/EastAsianWidth-14.0.0d2.txt'
 TYPES = Hash.new
 
 def output_line(curr_start, curr_end, curr_type)
@@ -22,7 +22,7 @@ module Unicode
   print "    DATA=["
 end
 
-content = open(URL).read
+content = URI.open(URL).read
 prev_start = prev_end = prev_type = nil
 content.each_line.with_index do |line, n|
   if n == 0
