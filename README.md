@@ -4,7 +4,7 @@
 
 This library is a port of [easta](https://github.com/teppeis/easta) for Node.js.
 
-Support Unicode version: [14.0.0](https://www.unicode.org/Public/14.0.0/ucd/EastAsianWidth-14.0.0d2.txt)
+Support Unicode version: [14.0.0](https://www.unicode.org/Public/14.0.0/ucd/EastAsianWidth-14.0.0d5.txt)
 
 
 ## Installation
@@ -35,6 +35,10 @@ Unicode::Eaw.property('À') #=> :N  ## Neutral
 ```
 
 ## Changelog
+
+### 2.2.0
+
+update Unicode version to 14.0.0d2 -> 14.0.0d5
 
 ### 2.1.0
 

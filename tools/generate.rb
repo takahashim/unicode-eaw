@@ -1,6 +1,6 @@
 require 'open-uri'
 
-URL = 'https://www.unicode.org/Public/14.0.0/ucd/EastAsianWidth-14.0.0d2.txt'
+URL = 'https://www.unicode.org/Public/14.0.0/ucd/EastAsianWidth-14.0.0d5.txt'
 TYPES = Hash.new
 
 def output_line(curr_start, curr_end, curr_type)
